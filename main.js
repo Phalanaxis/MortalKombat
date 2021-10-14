@@ -1,9 +1,9 @@
 /*Task 0*/
 
 let player1 = {
-    name : 'Zhabka',
+    name : 'Kitana',
     hp : 100,
-    img : "https://i.gifer.com/VhdJ.gif",
+    img : "http://reactmarathon-api.herokuapp.com/assets/kitana.gif",
     weapon : ['axe','sword', 'tower shield'],
     atack : function(){
         console.log(this.name + 'Fight...');
@@ -13,7 +13,7 @@ let player1 = {
 console.log(player1);
 
 let player2 = {
-    name : 'Putzero',
+    name : 'Putin',
     hp : 100,
     img : "https://i.gifer.com/y4.gif",
     weapon : ['left hand','right hand', 'head'],
