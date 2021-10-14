@@ -1,9 +1,9 @@
 /*Task 0*/
 
 let player1 = {
-    name : 'Scorpion',
+    name : 'Zhabka',
     hp : 100,
-    img : "- http://reactmarathon-api.herokuapp.com/assets/scorpion.gif",
+    img : "https://i.gifer.com/VhdJ.gif",
     weapon : ['axe','sword', 'tower shield'],
     atack : function(){
         console.log(this.name + 'Fight...');
@@ -13,9 +13,9 @@ let player1 = {
 console.log(player1);
 
 let player2 = {
-    name : 'Subzero',
-    hp : 80,
-    img : "- http://reactmarathon-api.herokuapp.com/assets/scorpion.gif",
+    name : 'Putzero',
+    hp : 100,
+    img : "https://i.gifer.com/y4.gif",
     weapon : ['left hand','right hand', 'head'],
     atack : function(){
         console.log(this.name + 'Fight...');
@@ -46,11 +46,11 @@ function createPlayer(name, hp, img){
     $player1.appendChild($character);
     $progressbar.appendChild($life);
     $progressbar.appendChild($name);
-    $character.appendChild($img);
 
     $life.style.width = hp + '%';
     $name.innerText = name;
     $img.src = img;
+    $character.appendChild($img);
 }
 
 createPlayer(player1.name, player1.hp, player1.img);
