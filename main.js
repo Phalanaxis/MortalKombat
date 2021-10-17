@@ -1,4 +1,3 @@
-/*Task 0*/
 
 let player1 = {
     name : 'Kitana',
@@ -22,8 +21,6 @@ let player2 = {
     }
 };
 
-/*Task 1*/
-
 function createPlayer(name, hp, img){
     const $player1 = document.createElement('div');
     
@@ -40,7 +37,6 @@ function createPlayer(name, hp, img){
     $life.classList.add('life');
     $name.classList.add('name');
 
-    const arenas = document.querySelector('.arenas');
     arenas.appendChild($player1);
     $player1.appendChild($progressbar);
     $player1.appendChild($character);
@@ -52,6 +48,8 @@ function createPlayer(name, hp, img){
     $img.src = img;
     $character.appendChild($img);
 }
+
+const arenas = document.querySelector('.arenas');
 
 createPlayer(player1.name, player1.hp, player1.img);
 createPlayer(player2.name, player2.hp, player2.img);
